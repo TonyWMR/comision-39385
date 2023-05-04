@@ -83,8 +83,6 @@
     grid-row-end: 4;
     padding: 20px;
     width: 500px; /*variable en observacion*/
-    /*position: absolute;
-    z-index: 1; */
     position: absolute;
     z-index: 1;
 }
@@ -102,8 +100,17 @@ form{
     align-items: center;
     padding: 20px;
     margin: 10px;
-    
 }
+.form{
+    width: fit-content;
+    height: fit-content;
+
+
+}
+/*form label{
+    display: block;
+    width: 150px;
+} */
 form label, form input{
     display: block;
     margin-bottom: 10px;
@@ -564,6 +571,12 @@ button:hover{
 
 }
 
+
+
+
+
+
+
 @media(max-width:1024px) {
     .navbar{
         background-color: #7C96AB;
@@ -574,20 +587,42 @@ button:hover{
     }
     .navbar ul{
         gap: 20px;
-        
-        /*flex-direction: row;*/
-    }
-    .fondo{
-        max-width: 100%;
-        height: auto;
     }
     .container{
-        grid-template-columns: repeat(2,auto);
-        grid-template-rows: repeat(6,auto);
-        grid-template-areas: 
-        "column1 column2"
-        "column1 column2"
-        "column1 column2";
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6,1fr);
+        grid-gap: 20px;
+        /*height y width estan al 100 en la principal*/
+
+    }
+    .column1{
+        height: 20%;
+    }
+    .column1 h1{
+        font-size: 30px;
+    }
+    .column1 p{
+        font-size: 18px;
+    }
+    .column2{
+        height: 100vh;
+    }
+    form label{
+    display: block;
+    width: 150px; /* Tamaño deseado */
+    padding: 10px;
+    border: 1px solid #ccc;
+    }
+    form input{
+    display: block;
+    width: 100%; /* Ocupar todo el ancho disponible */
+    padding: 10px;
+    border: 1px solid #ccc;
+    }
+
+    }
+    .flexbox{
+        display: none;
     }
     .grid-flex{
         width: 100%;
@@ -612,8 +647,6 @@ button:hover{
     .flex-final{ /*mejorar los estilos mas adelante*/
         flex-direction: column;
     }
-
-}
 
 @media(max-width:768px) {
     .navbar{
