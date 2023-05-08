@@ -36,7 +36,7 @@
 .fondo{
     background-image: url(../assets/image/9.png);
     background-size: cover;
-    background-position: center;
+    /*background-position: center;*/
     width: 100%;
     height: 100vh;
     background-attachment: fixed;
@@ -55,7 +55,7 @@
     "column1 column2"
     "column1 column2"
     "column1 column2";
-    position: relative;
+    /*position: relative;*/
     /*z-index: 1; */
 }
 .column1{
@@ -103,6 +103,7 @@ form{
     align-items: center;
     padding: 20px;
     margin: 10px;
+    
 }
 /*.form{
     width: fit-content;
@@ -604,7 +605,7 @@ button:hover{
         "column1 column2"
         "column1 column2"
         "column1 column2";
-        position: relative;
+        /*position: relative;*/
         /*z-index: 1; */
     }
     .column1{
@@ -613,7 +614,7 @@ button:hover{
         grid-row-start: 3;
         grid-row-end: 10;
         /*height: 30%;*/
-        position: absolute;
+        /*position: absolute;*/
         z-index: 1;
         
     }
@@ -635,10 +636,7 @@ button:hover{
         grid-row-end: 4;
         padding: 20px;
         /*width: 100%; variable en observacion*/
-        /*height: auto;*/
-        
-        
-        position: ;
+        height: auto;
         /*z-index: 1;*/
     }
     .column2 h2{
@@ -655,7 +653,7 @@ button:hover{
         /*align-items: center;*/
         /*padding: 15px;
         margin: 5px; */
-        box-sizing: border-box
+        
     }
     
     form h2 label, input{
