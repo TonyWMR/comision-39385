@@ -11,25 +11,25 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="hero-index">
+    <!--<div class="hero-index">-->
     <header>
         <nav class="navbar">
             <a href="#"><img src="./assets/image/logo.png" alt=""></a> <!--colocar logo-->
             <ul>
                 <li><a href="./pages/Vender.html">Vender</a></li>
-                <li><a href="./pages/Vender.html">Comprar</a></li>
-                <li><a href="./pages/Vender.html">Valora tu casa</a></li>
-                <li><a href="./pages/Vender.html">Servicios</a></li>
-                <li><a href="./pages/Vender.html">Hipotecas</a></li>
-                <li><a href="./pages/Vender.html">Nosotros</a></li>
-                <li><a href="./pages/Vender.html">Mi area</a></li>
+                <li><a href="./pages/Comprar.html">Comprar</a></li>
+                <li><a href="./pages/valora tu casa.html">Valora tu casa</a></li>
+                <li><a href="./pages/Servicios.html">Servicios</a></li>
+                <li><a href="./pages/Hipotecas.html">Hipotecas</a></li>
+                <li><a href="./pages/Nosotros.html">Nosotros</a></li>
+                
             </ul>
         </nav>
     </header>
     <main>
         <section class="fondo">
-            <section class="container">
-                <!--<img src="./assets/image/9.png" alt="">-->
+            <!--<img src="./assets/image/9.png" alt="">-->
+            <section class="contenido">
                 <div class="column1">
                     <h1>Con Homesell tú decides
                         <br>
@@ -51,11 +51,15 @@
                         <label for="Telefono">Teléfono</label>
                         <input type="text" name="Teléfono">
                             
-                        <input type="checkbox"> <!--derrente se debe hacer modificacion-->
-                        <label for="#">He leído la información sobre tratamiento de datos personales</label>
+                        <label for="mycheckbox">
+                            <input type="checkbox" id="myCheckbox">
+                            He leído la información sobre tratamiento de datos personales.
+                        </label>
                             
-                        <input type="checkbox">
-                        <label for="">Sí, estoy de acuerdo con que Housell y colaboradores contacten conmigo por e-mail y teléfono para enviarme información de mi interés relacionada con la venta de mi vivienda</label>
+                        <label for="mycheckbox">
+                            <input type="checkbox" id="myCheckbox">
+                            Sí, estoy de acuerdo con que Housell y colaboradores contacten conmigo por e-mail y teléfono para enviarme información de mi interés relacionada con la venta de mi vivienda.
+                        </label>
                             
                         <input type="submit" value="INFÓRMATE GRATIS">
                     </form>
@@ -79,10 +83,7 @@
                 </div> <!--hasta aca termine de armar parte 1, esta parte vamos utilizar flex para hacer position -->
             </div>
         </section>
-        <section class="blanco">
-            <h3>seccion en blanco</h3>
-        </section>
-
+        
         <section class="grid-flex">
             <div class="hijo1">
                 <h2>Elige un servicio inmobiliario a tu medida</h2>
@@ -119,8 +120,8 @@
                     es el que se adapta a ti y no al revés.</p>
                 </div>
             </div>
-            <section class="container-grid3"> <!--colocar class-->
-                <div class="columna1"> <!--colocar class-->
+            <section class="container-grid3">
+                <div class="columna1"> 
                     <strong>¿Qué incluye?</strong>
                     <p>Creación y publicación del anuncio de tu vivienda en los principales portales inmobiliarios</p>
                     
@@ -157,11 +158,14 @@
                     <img src="./assets/image/icons8-comprobado-24.png" alt="">
                     <hr>
                     <img src="./assets/image/icons8-comprobado-24.png" alt="">
-                    <a href=""><strong>¿Por qué elegirlo</strong></a>
+                    <a href=""><strong>¿Por qué elegirlo?</strong></a>
                     <button>Más Información</button>
                 </div>
-                <div class="columna3">
+                <div class="columna3-p">
                     <p>El más vendido</p> 
+                </div>
+                <div class="columna3">
+                    <!--<p>El más vendido</p>--> 
                     <strong>Plan Óptima</strong>
                     <p>Un servicio inmobiliario integral, al mejor precio, con el que ahorras miles de euros al vender tu casa.</p>
                     <p>Desde<b>1.990€</b>/mes</p>
@@ -180,7 +184,7 @@
                     <img src="./assets/image/icons8-comprobado-24.png" alt="">
                     <hr>
                     <img src="./assets/image/icons8-comprobado-24.png" alt="">
-                    <a href=""><strong>¿Por qué elegirlo</strong></a>
+                    <a href=""><strong>¿Por qué elegirlo?</strong></a>
                     <button>Más Información</button>
                 </div>
                 <div class="columna4">
@@ -202,7 +206,7 @@
                     <img src="./assets/image/icons8-comprobado-24.png" alt="">
                     <hr>
                     <img src="./assets/image/icons8-comprobado-24.png" alt="">
-                    <a href=""><strong>¿Por qué elegirlo</strong></a>
+                    <a href=""><strong>¿Por qué elegirlo?</strong></a>
                     <button>Más Información</button>
                 </div>
             </section>
@@ -211,7 +215,6 @@
                 <p>* * Puedes añadir estos servicios a tu Plan Housell si lo necesitas.</p>
             </div>
         </section>
-        
         
         <section class="parte4">
             <section class="segmento-flex">
@@ -235,6 +238,7 @@
                         <h3>Valora tu vivienda</h3>
                         <p>Calcula en dos minutos cuánto vale la casa que quieres vender (o comprar) y recibe un estudio detallado con datos del mercado inmobiliario de tu zona</p>
                         <button>Hacer valoración</button>
+                        
                     </div>
                     <div class="sec3">
                         <img src="./assets/image/calcula.png" alt="">
@@ -250,7 +254,7 @@
             </section>
         </section>
     </main>
-    <footer>
+    <footer>  <!--tal vez colocar width y height-->
         <section class="footer-1">
             <div class="foot1">
                 <strong>Ubicaciones más vendidas</strong>
@@ -302,7 +306,7 @@
             <div class="redes">
                 <strong>Redes sociales</strong>
                 <div>
-                    <a href=""><img width="30px" src="./assets/image/icons8-facebook-24.png" alt=""></a>
+                    <a href=""><img width="30px" src="./assets/image/icons8-facebook-30.png" alt=""></a>
                     <a href=""><img src="./assets/image/icons8-instagram-30.png" alt=""></a>
                     <a href=""><img width="30px" src="./assets/image/icons8-linkedin-48.png" alt=""></a>
                     <a href=""><img width="30px" src="./assets/image/icons8-twitter-24.png" alt=""></a>
