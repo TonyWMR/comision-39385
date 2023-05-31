@@ -40,6 +40,7 @@
     width: 100%;
     height: 100vh;
     background-attachment: fixed;
+    position: relative;
     /*background-repeat: no-repeat;*/
 }
 
@@ -78,7 +79,7 @@
 .column2{
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 3;
+    grid-row-start: 2;
     grid-row-end: 8;
     padding: 20px;
     /*width: 100%;*/ /*variable en observacion*/
@@ -119,14 +120,14 @@ form label, form input{
 .column2 form input[type="checkbox"] {
     align-items: center; /*puede estar dentro la clase de arriba*/
 }
-.flexbox{
+.flexbox{ /*queda en observacion todo o cambiar propiedades*/
     display: flex;
     justify-content: center;
+    align-items: center;
     position: absolute;
-    bottom: -35%;
-    
-
-    
+    bottom: -18px;
+    width: 100%;
+    z-index: 1;
 }
 
 .grid1{
@@ -134,21 +135,21 @@ form label, form input{
     color: white;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     width: 73%;
-    height: 200px;
-    grid-area: 
+    height: auto; /*se puede cambiar*/
+    /*grid-area: 
     "block1 block2 block3"
     "block1 block2 block3"
-    "block1 block2 block3";
+    "block1 block2 block3"; */
 }
 
 .block1{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 7;
+    /*grid-column-start: 2;
+    grid-column-end: 4; */
+    grid-row-start: 2;
+    grid-row-end: 6;
     font-family: 'Poppins', sans-serif;
     justify-self: center;
     align-self: center;
@@ -156,20 +157,20 @@ form label, form input{
 }
 
 .block2{
-    grid-column-start: 6;
-    grid-column-end: 8;
-    grid-row-start: 4;
-    grid-row-end: 7;
+    /*grid-column-start: 6;
+    grid-column-end: 8;*/
+    grid-row-start: 2;
+    grid-row-end: 6;
     font-family: 'Poppins', sans-serif;
     justify-self: center;
     align-self: center;
     
 }
 .block3{
-    grid-column-start: 10;
-    grid-column-end: 12;
-    grid-row-start: 4;
-    grid-row-end: 7;
+    /*grid-column-start: 10;
+    grid-column-end: 12;*/
+    grid-row-start: 2;
+    grid-row-end: 6;
     font-family: 'Poppins', sans-serif;
     justify-self: center;
     align-self: center;
